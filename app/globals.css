@@ -32,7 +32,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 300%;
+  font-size: clamp(1.9rem, 6vw, 3rem);
 }
 
 p {
@@ -120,9 +120,13 @@ button:hover {
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 250px;
+  width: clamp(150px, 40vw, 250px);
   margin-right: 16px;
   aspect-ratio: 1 / 1;
+}
+
+img {
+  max-width: 100%;
 }
 
 .carousel-item img {
@@ -507,14 +511,4 @@ footer p {
   padding: 4px 14px;
   color: var(--warna6);
   background-color: var(--warna2);
-}
-
-@media (max-width: 576px) {
-  .product-detail-info {
-    text-align: center;
-  }
-
-  .product-tags {
-    justify-content: center;
-  }
 }
