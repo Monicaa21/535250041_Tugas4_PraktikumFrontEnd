@@ -42,12 +42,12 @@ export function getProductById(id: string): Product | undefined {
   return getProducts().find((p) => p.id === id);
 }
 
-// Filter berdasarkan kategori (opsional)
+// filter berdasarkan kategori 
 export function getProductsByCategory(category: string): Product[] {
   return getProducts().filter((p) => p.category === category);
 }
 
-// Versi DOM manual (mirip kode kamu sebelumnya)
+// Versi DOM manual
 export function renderCards(target: HTMLElement, products: Product[] = getProducts()) {
   target.innerHTML = "";
 
@@ -68,8 +68,8 @@ export function renderCards(target: HTMLElement, products: Product[] = getProduc
       <img src="/${esc(imageFile)}" class="card-img-top" alt="${esc(p.name)}">
       <div class="card-body">
         <h4 class="card-title">${esc(p.name)}</h4>
-        <p class="card-text">${esc(p.brand)} • ${esc(p.from)}</p>
-        <p class="card-loc">${esc(p.category)} / ${esc(p.cat2)}</p>
+        <p class="card-text">${esc(p.brand)}</p>
+        <a class="card-text view-detail" href="/productRec/${esc(p.id)}">View Detail</a>
       </div>
     `;
 
@@ -129,14 +129,12 @@ export function setupProductExplorer(cardTarget: HTMLElement): () => void {
     });
   }
 
-  // tombol "Cancel Filter" cuma muncul kalau ada filter aktif
+  // tombol "Cancel Filter" cuma muncul kalau filter dah dipilih
   function updateTombolReset() {
     resetBtn?.classList.toggle("show", terpilih.size > 0);
   }
 
   // gabungan search + filter
-  // search: nama mengandung teks yang diketik (case insensitive)
-  // filter: produk lolos kalau punya MINIMAL SATU permasalahan yang dipilih
   function terapkan() {
     const keyword = (searchInput?.value ?? "").trim().toLowerCase();
 
@@ -156,7 +154,7 @@ export function setupProductExplorer(cardTarget: HTMLElement): () => void {
     modal?.classList.remove("open");
   }
 
-  // search langsung jalan tiap ketik
+  // search langsung ke load tiap ketik
   searchInput?.addEventListener("input", terapkan, { signal });
 
   openBtn?.addEventListener("click", () => modal?.classList.add("open"), { signal });
@@ -168,7 +166,7 @@ export function setupProductExplorer(cardTarget: HTMLElement): () => void {
     tutupModal(false);
   }, { signal });
 
-  // tombol × , klik area gelap, atau Escape = batal (pilihan yang belum di-Done dibuang)
+  // tombol x, klik area gelap, atau Escape = batal (pilihan yang belum di-Done dibuang)
   cancelBtn?.addEventListener("click", () => tutupModal(true), { signal });
   modal?.addEventListener("click", (e) => {
     if (e.target === modal) tutupModal(true);
