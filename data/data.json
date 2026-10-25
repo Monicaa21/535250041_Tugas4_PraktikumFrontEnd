@@ -1,0 +1,152 @@
+[
+    {
+        "id": "skia-01",
+        "name": "Hyalu-Cica Water-Fit Sun Serum UV",
+        "brand": "SKIN1004",
+        "from": "Korea Selatan",
+        "category": "Skincare",
+        "cat2": "Sunscreen",
+        "permasalahan": ["Kulit Kering", "Sinar UV"],
+        "image": "hyalu-cica-water-sunscreen.webp"
+    },
+    {
+        "id": "dovebs-01",
+        "name": "Ice Cream Body Scrub Pomegranate Balanced Soft Vitamin E Complex",
+        "brand": "Dove",
+        "from": "Amerika Serikat",
+        "category": "Bodycare",
+        "cat2": "Body Scrub",
+        "permasalahan": ["Kulit Kering", "Kusam"],
+        "image": "ice-cream-pomegranate.png"
+    },
+    {
+        "id": "dovebs-02",
+        "name": "Ice Cream Body Scrub Sugar & Coconut Silky Smooth Natural AHA",
+        "brand": "Dove",
+        "from": "Amerika Serikat",
+        "category": "Bodycare",
+        "cat2": "Body Scrub",
+        "permasalahan": ["Kulit Kering", "Kusam"],
+        "image": "ice-cream-sugar-coconut.avif"
+    },
+    {
+        "id": "skingame-01",
+        "name": "Kind Watery Moisturizer",
+        "brand": "Skin Game",
+        "from": "Indonesia",
+        "category": "Skincare",
+        "cat2": "Moisturizer",
+        "permasalahan": ["Kulit Berminyak"],
+        "image": "skingame-kind-watery.webp"
+    },
+    {
+        "id": "skingame-02",
+        "name": "Panthenol Chemical Sunscreen SPF 50 PA++++",
+        "brand": "Skin Game",
+        "from": "Indonesia",
+        "category": "Skincare",
+        "cat2": "Sunscreen",
+        "permasalahan": ["Sinar UV"],
+        "image": "skingame-chemical-sunscreen.webp"
+    },
+    {
+        "id": "aepura-01",
+        "name": "Red-Ginseng Hair-Activating Shampoo",
+        "brand": "Aepura",
+        "from": "Korea Selatan",
+        "category": "Haircare",
+        "cat2": "Shampoo",
+        "permasalahan": ["Rambut Rontok"],
+        "image": "aepura-shampo.jpg"
+    },
+    {
+        "id": "JUVA-01",
+        "name": "Wrinkle Warrior Serum",
+        "brand": "JUVA by ZAP",
+        "from": "Indonesia",
+        "category": "Skincare",
+        "cat2": "Serum",
+        "permasalahan": ["Aging", "Kusam"],
+        "image": "juva-wrinkle.jpg"
+    },
+    {
+        "id": "skinvu-01",
+        "name": "SKINVU Whitening Body Lotion Serum Infused",
+        "brand": "SKINVU",
+        "from": "Indonesia",
+        "category": "Bodycare",
+        "cat2": "Lotion",
+        "permasalahan": ["Kusam"],
+        "image": "skinvu-lotion.jpg"
+    },
+    {
+        "id": "missdaisy-01",
+        "name": "MISSDAISY Perfume Shampoo - Blackcurrant & Vanilla Sugar",
+        "brand": "MISS DAISY",
+        "from": "Indonesia",
+        "category": "Haircare",
+        "cat2": "Shampoo",
+        "permasalahan": ["Ketombe Basah", "Rambut Berminyak"],
+        "image": "missdai-pink.png"
+    },
+    {
+        "id": "missdaisy-02",
+        "name": "MISSDAISY Perfume Shampoo - Peony & Amber",
+        "brand": "MISS DAISY",
+        "from": "Indonesia",
+        "category": "Haircare",
+        "cat2": "Shampoo",
+        "permasalahan": ["Ketombe Kering", "Rambut Kering", "Rambut Rusak"],
+        "image": "missdai-yellow.avif"
+    },
+    {
+        "id": "fino-01",
+        "name": "FINO Premium Touch Hair Mask",
+        "brand": "FINO",
+        "from": "Jepang",
+        "category": "Haircare",
+        "cat2": "Hair Mask",
+        "permasalahan": ["Rambut Kering", "Rambut Rusak"],
+        "image": "fino-hairmask.jpg"
+    },
+    {
+        "id": "boj-01",
+        "name": "Ginseng Essence Water",
+        "brand": "Beauty Of Joseon",
+        "from": "Korea Selatan",
+        "category": "Skincare",
+        "cat2": "Toner",
+        "permasalahan": ["Kulit Kering", "Aging"],
+        "image": "boj-toner-ginseng.webp"
+    },
+    {
+        "id": "maka-01",
+        "name": "T1 Techno Nature Rosemary Scalp & Hair Oil",
+        "brand": "Makarizo",
+        "from": "Indonesia",
+        "category": "Haircare",
+        "cat2": "Hair Oil",
+        "permasalahan": ["Rambut Rontok"],
+        "image": "maka-rosemary.jpg"
+    },
+    {
+        "id": "vasl-01",
+        "name": "Healthy Bright Gluta-Hya Serum Burst Sunscreen",
+        "brand": "Vaseline",
+        "from": "Amerika Serikat",
+        "category": "Bodycare",
+        "cat2": "Lotion",
+        "permasalahan": ["Sinar UV"],
+        "image": "vaseline-gluta-hya-sunscreen.png"
+    },
+    {
+        "id": "lavo-01",
+        "name": "Lavojoy Let It Glow Body Wash Skin Brightening",
+        "brand": "Lavojoy",
+        "from": "Australia",
+        "category": "Bodycare",
+        "cat2": "Body Wash",
+        "permasalahan": ["Kulit Kering"],
+        "image": "lavojoy-bodwash.jpg"
+    }
+]
