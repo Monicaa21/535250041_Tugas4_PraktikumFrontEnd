@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Nav } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
 import CarouselSkin from "../../components/CarouselSkin";
@@ -26,13 +27,13 @@ export default function Home() {
       </div>
 
       <div className="button-analyze">
-        <button id="button-skin">Facial Concerns</button>
-        <button id="button-skin">Body Concerns</button>
-        <button id="button-skin">Scalp & Hair Concerns</button>
+        <Link href="#facial-concern"><button className="button-skin">Facial Concerns</button></Link>
+        <Link href="#body-concern"><button className="button-skin">Body Concerns</button></Link>
+        <Link href="#hair-concern"><button className="button-skin">Scalp & Hair Concerns</button></Link>
       </div>
       <hr />
 
-      <h2>Facial Concern</h2>
+      <h2 id="facial-concern">Facial Concern</h2>
       <p className="if-u-had">If You Had..</p>
 
       <div className="concern-face">
@@ -104,7 +105,7 @@ export default function Home() {
 
       <hr />
 
-      <h2>Body Concerns</h2>
+      <h2 id="body-concern">Body Concerns</h2>
       <p className="if-u-had">If You Had..</p>
 
       <div className="concern-body">
@@ -144,7 +145,7 @@ export default function Home() {
 
       <hr />
 
-      <h2>Scalp & Hair Concerns</h2>
+      <h2 id="hair-concern">Scalp & Hair Concerns</h2>
       <p className="if-u-had">If You Had..</p>
 
       <div className="concern-hair">

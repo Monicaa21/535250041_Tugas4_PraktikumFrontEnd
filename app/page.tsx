@@ -1,9 +1,12 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Nav } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import Carousel from "../components/Carousel";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
     <Nav />
@@ -24,7 +27,7 @@ export default function Home() {
       <h2>Your Complete Beauty Guide</h2>
       <p>Discover the little things that make you feel your best.</p>
       <div className="card-utama">
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card home" style={{ width: '18rem' }}>
           <div className="card-body">
             <Image src="/skin.jpg" className="card-img" alt="skin" width={500} height={500} />
             <h4 className="mt-2 mb-0">Your Skin, Your Glow</h4>
@@ -32,7 +35,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card home" style={{ width: '18rem' }}>
           <div className="card-body">
             <Image src="/body.jpg" className="card-img" alt="body" width={400} height={250} />
             <h4 className="mt-2 mb-0">Care for Every Inch</h4>
@@ -40,7 +43,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card home" style={{ width: '18rem' }}>
           <div className="card-body">
             <Image src="/hair-care.jpg" className="card-img" alt="scalp" width={400} height={250} />
             <h4 className="mt-2 mb-0">Love Your Locks</h4>
@@ -48,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="card home" style={{ width: '18rem' }}>
           <div className="card-body">
             <Image src="/healthy-food.jpg" className="card-img" alt="healthy-food" width={400} height={250} />
             <h4 className="mt-2 mb-0">Glow from Within</h4>
@@ -84,7 +87,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        <button id="button-ke-skintype">Get To Know More!</button>
+        <button id="button-ke-skintype" onClick={() => router.push("/skinType")}>Get To Know More!</button>
       </div>
 
     </main>

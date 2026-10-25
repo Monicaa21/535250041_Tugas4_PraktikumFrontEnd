@@ -20,12 +20,17 @@ body {
   font-family: var(--font-body);
   font-weight: 500;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 600;
     color: var(--warna6);
+}
+
+h1 {
+  font-size: 300%;
 }
 
 p {
@@ -194,6 +199,11 @@ button:hover {
     justify-content: center;
 }
 
+.home {
+  border: 4px solid var(--warna2);
+  box-shadow: 0px 5px 0px var(--warna2);
+}
+
 .card img {
     height: 100%;
     width: auto;
@@ -205,11 +215,20 @@ button:hover {
     margin-top: 30px;
 }
 
+#facial-concern,
+#body-concern,
+#hair-concern {
+  scroll-margin-top: 72px;
+}
+
 .keseluruhan-explore-concern {
     background-color: var(--warna3);
     margin: 10px 20px;
+    margin-top: 20px;
     padding: 20px 30px;
     border-radius: 30px;
+    border: 4px solid var(--warna5);
+    box-shadow: 0px 6px 0px var(--warna5);
 }
 
 .button-analyze {
@@ -356,6 +375,8 @@ button:hover {
 
 footer {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     background-color: var(--warna6);
     width: 100%;
@@ -375,4 +396,43 @@ footer p {
 
 .main-content {
   flex: 1;
+}
+
+.informasi-terkait,
+.gambar-terkait {
+  background-color: var(--warna2);
+  border-radius: 20px;
+  margin: 20px 0px;
+  border: 2px solid var(--warna5);
+  box-shadow: 3px 6px 0px var(--warna5);
+  width: 70%;
+}
+
+.aboutt {
+  margin: 0px 20px;
+}
+
+.navbar-toggler {
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid var(--warna6);
+  margin: 0;
+}
+
+.drawer-end {
+  background-color: #5e4a42;
+}
+
+#navbarNavLabel {
+  color: var(--warna1);
+}
+
+.nav-item {
+  border: 2px solid var(--warna5);
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.nav-item:hover {
+  background-color: var(--warna5);
 }
