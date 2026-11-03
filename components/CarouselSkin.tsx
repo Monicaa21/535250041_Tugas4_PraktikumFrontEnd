@@ -16,10 +16,10 @@ export default function CarouselSkin() {
   const loop = [...images, ...images, ...images, ...images];
 
   return (
-    <div className="carousel">
-      <div className="carousel-track">
+    <div className="marquee">
+      <div className="marquee-track">
         {loop.map((src, i) => (
-          <div className="carousel-item" key={i}>
+          <div className="marquee-item" key={i}>
             <Image src={src} alt={`Gambar ${(i % images.length) + 1}`} width={300} height={300} loading="eager" />
           </div>
         ))}

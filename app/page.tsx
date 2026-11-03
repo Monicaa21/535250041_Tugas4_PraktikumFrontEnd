@@ -4,17 +4,18 @@ import Image from "next/image";
 import { Nav } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import Carousel from "../components/Carousel";
+import HeroSection from "../components/herosection";
 
 export default function Home() {
   const router = useRouter();
   return (
     <>
     <Nav />
+    <HeroSection />
 
     <main className="keseluruhan-home">
-
       <div className="konten-utama">
-        <h4 className="self-care">Self Care</h4>
+        <h4 className="self-care">The Skin Atelier</h4>
         <div className="h1-index">
           <h1>Your Skin,</h1>
           <h1 className="h1-kedua-index">Your Story</h1>
@@ -63,7 +64,7 @@ export default function Home() {
       <div className="keseluruhan-explore-concern">
         <h2>Explore Your Concern</h2>
           <div className="card-explore-masalah">
-            <div className="card" style={{ width: '18rem' }}>
+            <div className="card explore-concernn" style={{ width: '18rem' }}>
               <div className="card-body explore-ending">
                 <Image src="/Screenshot 2026-10-23 151405.png" className="card-img" alt="muka" width={400} height={250} />
                 <h4 className="mt-2 mb-0">Facial Concern</h4>
